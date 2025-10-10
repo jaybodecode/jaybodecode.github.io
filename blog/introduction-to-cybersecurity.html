@@ -1096,68 +1096,141 @@ video {
   }
 }
 </style><style type="text/css" >
-.hero[data-v-0f4d5585] {
+.blog-post-single[data-v-bd1741bf] {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.loading[data-v-bd1741bf], .error[data-v-bd1741bf], .not-found[data-v-bd1741bf] {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3rem;
+}
+.error[data-v-bd1741bf], .not-found[data-v-bd1741bf] {
+  color: #dc2626;
+}
+.post-content[data-v-bd1741bf] {
   background: white;
   border-radius: 12px;
-  margin-bottom: 3rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
 }
-.hero h2[data-v-0f4d5585] {
+.post-header[data-v-bd1741bf] {
+  padding: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.post-meta[data-v-bd1741bf] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+.post-category[data-v-bd1741bf] {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.post-date[data-v-bd1741bf] {
+  color: #6b7280;
+}
+.post-title[data-v-bd1741bf] {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  line-height: 1.2;
   color: #1e3a8a;
 }
-.hero p[data-v-0f4d5585] {
-  font-size: 1.2rem;
+.post-excerpt[data-v-bd1741bf] {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.post-author[data-v-bd1741bf] {
   color: #6b7280;
-  margin-bottom: 2rem;
+  font-size: 0.9rem;
 }
-.cta-button[data-v-0f4d5585] {
-  display: inline-block;
-  background: #3b82f6;
-  color: white;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-.cta-button[data-v-0f4d5585]:hover {
-  background: #2563eb;
-}
-.services[data-v-0f4d5585] {
-  margin-bottom: 3rem;
-}
-.services h3[data-v-0f4d5585] {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #1e3a8a;
-}
-.service-grid[data-v-0f4d5585] {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-.service-card[data-v-0f4d5585] {
-  background: white;
+.post-body[data-v-bd1741bf] {
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  line-height: 1.7;
+  color: #374151;
 }
-.service-card[data-v-0f4d5585]:hover {
-  transform: translateY(-5px);
-}
-.service-card h4[data-v-0f4d5585] {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.post-body[data-v-bd1741bf] h1,
+.post-body[data-v-bd1741bf] h2,
+.post-body[data-v-bd1741bf] h3,
+.post-body[data-v-bd1741bf] h4,
+.post-body[data-v-bd1741bf] h5,
+.post-body[data-v-bd1741bf] h6 {
   color: #1e3a8a;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-.service-card p[data-v-0f4d5585] {
-  color: #6b7280;
+.post-body[data-v-bd1741bf] h1 { font-size: 2rem;
+}
+.post-body[data-v-bd1741bf] h2 { font-size: 1.75rem;
+}
+.post-body[data-v-bd1741bf] h3 { font-size: 1.5rem;
+}
+.post-body[data-v-bd1741bf] h4 { font-size: 1.25rem;
+}
+.post-body[data-v-bd1741bf] h5 { font-size: 1.1rem;
+}
+.post-body[data-v-bd1741bf] h6 { font-size: 1rem;
+}
+.post-body[data-v-bd1741bf] p {
+  margin-bottom: 1rem;
+}
+.post-body[data-v-bd1741bf] ul,
+.post-body[data-v-bd1741bf] ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.post-body[data-v-bd1741bf] li {
+  margin-bottom: 0.5rem;
+}
+.post-body[data-v-bd1741bf] blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #4b5563;
+}
+.post-tags[data-v-bd1741bf] {
+  padding: 0 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+.post-tags h3[data-v-bd1741bf] {
+  font-size: 1.1rem;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+.tag[data-v-bd1741bf] {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.post-footer[data-v-bd1741bf] {
+  padding: 2rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+.back-link[data-v-bd1741bf] {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.back-link[data-v-bd1741bf]:hover {
+  color: #2563eb;
 }
 </style><style type="text/css" >
 .site-header[data-v-e0de4390] {
@@ -1268,7 +1341,42 @@ video {
 }
 </style></head>
   <body>
-    <div id="app" data-v-app=""><div id="app"><div data-v-7dcba77a="" id="website-app" site="cybernetsec-io"><header data-v-e0de4390="" data-v-7dcba77a="" class="site-header"><nav data-v-e0de4390="" class="nav-container"><div data-v-e0de4390="" class="nav-brand"><img data-v-e0de4390="" src="logo.svg" alt="cyber.netsecops.io" class="logo"><h1 data-v-e0de4390="">Cybersecurity &amp; Network Security</h1></div><ul data-v-e0de4390="" class="nav-menu"><li data-v-e0de4390=""><a data-v-e0de4390="" aria-current="page" href="index.html" class="router-link-active router-link-exact-active">Home</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="about.html" class="">About</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="blog.html" class="">Blog</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="contact.html" class="">Contact</a></li></ul><select data-v-e0de4390="" class="dropdown"><option data-v-e0de4390="" value="">Select Service</option><option data-v-e0de4390="" value="network">Network Security</option><option data-v-e0de4390="" value="incident">Incident Response</option><option data-v-e0de4390="" value="compliance">Compliance</option><option data-v-e0de4390="" value="cloud">Cloud Security</option></select></nav></header><div data-v-7dcba77a="" class="main-content"><div data-v-0f4d5585="" data-v-7dcba77a="" class="home"><section data-v-0f4d5585="" class="hero"><h2 data-v-0f4d5585="">Cybersecurity &amp; Network Security</h2><p data-v-0f4d5585="">Comprehensive cybersecurity and network security solutions</p><a data-v-0f4d5585="" href="contact.html" class="cta-button">Get Started</a></section><section data-v-0f4d5585="" class="services"><h3 data-v-0f4d5585="">Our Services</h3><div data-v-0f4d5585="" class="service-grid"><div data-v-0f4d5585="" class="service-card"><h4 data-v-0f4d5585="">Network Security</h4><p data-v-0f4d5585="">Comprehensive network protection and monitoring solutions</p></div><div data-v-0f4d5585="" class="service-card"><h4 data-v-0f4d5585="">Incident Response</h4><p data-v-0f4d5585="">Rapid response and recovery from security incidents</p></div><div data-v-0f4d5585="" class="service-card"><h4 data-v-0f4d5585="">Compliance</h4><p data-v-0f4d5585="">Ensure regulatory compliance across your organization</p></div></div></section></div></div><footer data-v-06d049cd="" data-v-7dcba77a="" class="site-footer"><div data-v-06d049cd="" class="footer-content"><p data-v-06d049cd="">© 2025 cyber.netsecops.io. All rights reserved.</p><div data-v-06d049cd="" class="footer-links"><a data-v-06d049cd="" href="privacy">Privacy Policy</a><a data-v-06d049cd="" href="terms">Terms of Service</a><a data-v-06d049cd="" href="contact">Contact</a></div><div data-v-06d049cd="" class="social-links"><a data-v-06d049cd="" href="https://linkedin.com/company/cybernetsecops">LinkedIn</a><a data-v-06d049cd="" href="https://twitter.com/cybernetsecops">Twitter</a><a data-v-06d049cd="" href="https://github.com/cybernetsecops">GitHub</a></div></div></footer></div></div></div>
+    <div id="app" data-v-app=""><div id="app"><div data-v-7dcba77a="" id="website-app" site="cybernetsec-io" slug="introduction-to-cybersecurity"><header data-v-e0de4390="" data-v-7dcba77a="" class="site-header"><nav data-v-e0de4390="" class="nav-container"><div data-v-e0de4390="" class="nav-brand"><img data-v-e0de4390="" src="logo.svg" alt="cyber.netsecops.io" class="logo"><h1 data-v-e0de4390="">Cybersecurity &amp; Network Security</h1></div><ul data-v-e0de4390="" class="nav-menu"><li data-v-e0de4390=""><a data-v-e0de4390="" href="index.html" class="router-link-active">Home</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="about.html" class="">About</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="blog.html" class="">Blog</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="contact.html" class="">Contact</a></li></ul><select data-v-e0de4390="" class="dropdown"><option data-v-e0de4390="" value="">Select Service</option><option data-v-e0de4390="" value="network">Network Security</option><option data-v-e0de4390="" value="incident">Incident Response</option><option data-v-e0de4390="" value="compliance">Compliance</option><option data-v-e0de4390="" value="cloud">Cloud Security</option></select></nav></header><div data-v-7dcba77a="" class="main-content"><div data-v-bd1741bf="" data-v-7dcba77a="" class="blog-post-single" site="cybernetsec-io" slug="introduction-to-cybersecurity"><article data-v-bd1741bf="" class="post-content"><header data-v-bd1741bf="" class="post-header"><div data-v-bd1741bf="" class="post-meta"><span data-v-bd1741bf="" class="post-category">cybersecurity</span><time data-v-bd1741bf="" class="post-date">October 2, 2025</time></div><h1 data-v-bd1741bf="" class="post-title">Introduction to Cybersecurity</h1><p data-v-bd1741bf="" class="post-excerpt">Learn the fundamentals of cybersecurity and why it matters in today's digital world</p><div data-v-bd1741bf="" class="post-author"><span data-v-bd1741bf="">By Admin User</span></div></header><div data-v-bd1741bf="" class="post-body"># Introduction to Cybersecurity
+
+Cybersecurity has become one of the most critical aspects of modern business and personal computing. In an era where digital transformation is accelerating, understanding the fundamentals of cybersecurity is essential for everyone.
+
+## What is Cybersecurity?
+
+Cybersecurity encompasses all practices, technologies, and processes designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. It involves multiple layers of protection across computers, networks, programs, and data.
+
+## Key Principles
+
+### 1. Confidentiality
+Ensuring that information is only accessible to those authorized to have access.
+
+### 2. Integrity
+Maintaining the accuracy and completeness of data over its entire lifecycle.
+
+### 3. Availability
+Ensuring that authorized users have access to information and associated assets when required.
+
+## Common Threats
+
+- **Malware**: Malicious software including viruses, worms, and ransomware
+- **Phishing**: Fraudulent attempts to obtain sensitive information
+- **DDoS Attacks**: Distributed denial-of-service attacks
+- **Man-in-the-Middle**: Intercepting communications between two parties
+
+## Best Practices
+
+1. Use strong, unique passwords
+2. Enable two-factor authentication
+3. Keep software updated
+4. Be cautious with email attachments
+5. Use antivirus software
+6. Backup important data regularly
+
+Understanding these fundamentals is the first step toward building a secure digital environment.</div><div data-v-bd1741bf="" class="post-tags"><h3 data-v-bd1741bf="">Tags:</h3><span data-v-bd1741bf="" class="tag">cybersecurity</span><span data-v-bd1741bf="" class="tag">basics</span><span data-v-bd1741bf="" class="tag">security</span></div><footer data-v-bd1741bf="" class="post-footer"><a data-v-bd1741bf="" href="blog.html" class="back-link"> ← Back to Blog </a></footer></article></div></div><footer data-v-06d049cd="" data-v-7dcba77a="" class="site-footer"><div data-v-06d049cd="" class="footer-content"><p data-v-06d049cd="">© 2025 cyber.netsecops.io. All rights reserved.</p><div data-v-06d049cd="" class="footer-links"><a data-v-06d049cd="" href="privacy">Privacy Policy</a><a data-v-06d049cd="" href="terms">Terms of Service</a><a data-v-06d049cd="" href="contact">Contact</a></div><div data-v-06d049cd="" class="social-links"><a data-v-06d049cd="" href="https://linkedin.com/company/cybernetsecops">LinkedIn</a><a data-v-06d049cd="" href="https://twitter.com/cybernetsecops">Twitter</a><a data-v-06d049cd="" href="https://github.com/cybernetsecops">GitHub</a></div></div></footer></div></div></div>
     
   
 

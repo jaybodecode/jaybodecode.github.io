@@ -565,9 +565,6 @@ video {
 .top-4 {
   top: 1rem;
 }
-.z-10 {
-  z-index: 10;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -590,6 +587,12 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
 .block {
   display: block;
 }
@@ -602,17 +605,20 @@ video {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-16 {
   height: 4rem;
 }
 .h-96 {
   height: 24rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .min-h-screen {
   min-height: 100vh;
-}
-.w-48 {
-  width: 12rem;
 }
 .w-full {
   width: 100%;
@@ -622,6 +628,9 @@ video {
 }
 .max-w-md {
   max-width: 28rem;
+}
+.max-w-4xl {
+  max-width: 56rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -637,8 +646,17 @@ video {
      -moz-appearance: none;
           appearance: none;
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
@@ -646,10 +664,18 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .-space-y-px > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(-1px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(-1px * var(--tw-space-y-reverse));
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -757,10 +783,6 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -805,6 +827,12 @@ video {
 .font-medium {
   font-weight: 500;
 }
+.capitalize {
+  text-transform: capitalize;
+}
+.italic {
+  font-style: italic;
+}
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -844,6 +872,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
+.underline {
+  text-decoration-line: underline;
+}
 .placeholder-gray-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity, 1));
@@ -855,11 +890,6 @@ video {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-sm {
@@ -879,13 +909,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
 }
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
 .hover\:bg-gray-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
@@ -902,6 +932,10 @@ video {
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
+}
+.hover\:text-blue-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
 }
 .focus\:z-10:focus {
   z-index: 10;
@@ -989,6 +1023,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.dark\:text-blue-400:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
 .dark\:placeholder-gray-400:is(.dark *)::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
@@ -1013,7 +1051,23 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+.dark\:hover\:text-blue-300:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity, 1));
+}
 @media (min-width: 640px) {
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
   .sm\:p-6 {
     padding: 1.5rem;
@@ -1154,15 +1208,27 @@ video {
   margin: 0 auto;
   padding: 2rem;
 }
+.blog-header[data-v-63de2f45] {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 .blog h2[data-v-63de2f45] {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #1e3a8a;
 }
-.blog p[data-v-63de2f45] {
+.blog > p[data-v-63de2f45] {
   font-size: 1.2rem;
   color: #6b7280;
   margin-bottom: 2rem;
+}
+.loading[data-v-63de2f45], .error[data-v-63de2f45], .no-posts[data-v-63de2f45] {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+.error[data-v-63de2f45] {
+  color: #dc2626;
 }
 .blog-posts[data-v-63de2f45] {
   display: grid;
@@ -1173,23 +1239,76 @@ video {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s ease;
 }
-.blog-post h3[data-v-63de2f45] {
+.blog-post[data-v-63de2f45]:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.post-meta[data-v-63de2f45] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+.post-category[data-v-63de2f45] {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.post-date[data-v-63de2f45] {
+  color: #6b7280;
+}
+.post-title[data-v-63de2f45] {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.post-link[data-v-63de2f45] {
   color: #1e3a8a;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
-.blog-post p[data-v-63de2f45] {
-  color: #6b7280;
+.post-link[data-v-63de2f45]:hover {
+  color: #1d4ed8;
+}
+.post-excerpt[data-v-63de2f45] {
+  color: #4b5563;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
-.blog-post small[data-v-63de2f45] {
-  color: #9ca3af;
+.post-tags[data-v-63de2f45] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.tag[data-v-63de2f45] {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.read-more[data-v-63de2f45] {
+  display: inline-block;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.read-more[data-v-63de2f45]:hover {
+  color: #2563eb;
 }
 </style></head>
   <body>
-    <div id="app" data-v-app=""><div id="app"><div data-v-7dcba77a="" id="website-app" site="cybernetsec-io"><header data-v-e0de4390="" data-v-7dcba77a="" class="site-header"><nav data-v-e0de4390="" class="nav-container"><div data-v-e0de4390="" class="nav-brand"><img data-v-e0de4390="" src="logo.svg" alt="cyber.netsecops.io" class="logo"><h1 data-v-e0de4390="">Cybersecurity &amp; Network Security</h1></div><ul data-v-e0de4390="" class="nav-menu"><li data-v-e0de4390=""><a data-v-e0de4390="" href="index.html" class="router-link-active">Home</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="about.html" class="">About</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" aria-current="page" href="blog.html" class="router-link-active router-link-exact-active">Blog</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="contact.html" class="">Contact</a></li></ul><select data-v-e0de4390="" class="dropdown"><option data-v-e0de4390="" value="">Select Service</option><option data-v-e0de4390="" value="network">Network Security</option><option data-v-e0de4390="" value="incident">Incident Response</option><option data-v-e0de4390="" value="compliance">Compliance</option><option data-v-e0de4390="" value="cloud">Cloud Security</option></select></nav></header><div data-v-7dcba77a="" class="main-content"><div data-v-63de2f45="" data-v-7dcba77a="" class="blog"><h2 data-v-63de2f45="">Blog</h2><p data-v-63de2f45="">Latest insights and news from the cybersecurity world.</p><div data-v-63de2f45="" class="blog-posts"><div data-v-63de2f45="" class="blog-post"><h3 data-v-63de2f45="">The Future of Network Security</h3><p data-v-63de2f45="">Exploring emerging trends in network security and how organizations can prepare.</p><small data-v-63de2f45="">October 9, 2025</small></div><div data-v-63de2f45="" class="blog-post"><h3 data-v-63de2f45="">Incident Response Best Practices</h3><p data-v-63de2f45="">Key strategies for effective incident response and recovery.</p><small data-v-63de2f45="">October 8, 2025</small></div></div></div></div><footer data-v-06d049cd="" data-v-7dcba77a="" class="site-footer"><div data-v-06d049cd="" class="footer-content"><p data-v-06d049cd="">© 2025 cyber.netsecops.io. All rights reserved.</p><div data-v-06d049cd="" class="footer-links"><a data-v-06d049cd="" href="privacy">Privacy Policy</a><a data-v-06d049cd="" href="terms">Terms of Service</a><a data-v-06d049cd="" href="contact">Contact</a></div><div data-v-06d049cd="" class="social-links"><a data-v-06d049cd="" href="https://linkedin.com/company/cybernetsecops">LinkedIn</a><a data-v-06d049cd="" href="https://twitter.com/cybernetsecops">Twitter</a><a data-v-06d049cd="" href="https://github.com/cybernetsecops">GitHub</a></div></div></footer></div></div></div>
-    <script type="module" src="src/main.ts?t=1760048842345"></script>
+    <div id="app" data-v-app=""><div id="app"><div data-v-7dcba77a="" id="website-app" site="cybernetsec-io"><header data-v-e0de4390="" data-v-7dcba77a="" class="site-header"><nav data-v-e0de4390="" class="nav-container"><div data-v-e0de4390="" class="nav-brand"><img data-v-e0de4390="" src="logo.svg" alt="cyber.netsecops.io" class="logo"><h1 data-v-e0de4390="">Cybersecurity &amp; Network Security</h1></div><ul data-v-e0de4390="" class="nav-menu"><li data-v-e0de4390=""><a data-v-e0de4390="" href="index.html" class="router-link-active">Home</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="about.html" class="">About</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" aria-current="page" href="blog.html" class="router-link-active router-link-exact-active">Blog</a></li><li data-v-e0de4390=""><a data-v-e0de4390="" href="contact.html" class="">Contact</a></li></ul><select data-v-e0de4390="" class="dropdown"><option data-v-e0de4390="" value="">Select Service</option><option data-v-e0de4390="" value="network">Network Security</option><option data-v-e0de4390="" value="incident">Incident Response</option><option data-v-e0de4390="" value="compliance">Compliance</option><option data-v-e0de4390="" value="cloud">Cloud Security</option></select></nav></header><div data-v-7dcba77a="" class="main-content"><div data-v-63de2f45="" data-v-7dcba77a="" class="blog"><div data-v-63de2f45="" class="blog-header"><h2 data-v-63de2f45="">Blog</h2><p data-v-63de2f45="">Latest insights and news from the cybersecurity world.</p></div><div data-v-63de2f45="" class="blog-posts"><article data-v-63de2f45="" class="blog-post"><div data-v-63de2f45="" class="post-meta"><span data-v-63de2f45="" class="post-category">cybersecurity</span><time data-v-63de2f45="" class="post-date">October 7, 2025</time></div><h3 data-v-63de2f45="" class="post-title"><a data-v-63de2f45="" href="blog/advanced-threat-detection-ai.html" class="post-link">Advanced Threat Detection with AI</a></h3><p data-v-63de2f45="" class="post-excerpt">How artificial intelligence is revolutionizing threat detection and cybersecurity</p><div data-v-63de2f45="" class="post-tags"><span data-v-63de2f45="" class="tag">cybersecurity</span><span data-v-63de2f45="" class="tag">ai</span><span data-v-63de2f45="" class="tag">threat-detection</span><span data-v-63de2f45="" class="tag">machine-learning</span></div><a data-v-63de2f45="" href="blog/advanced-threat-detection-ai.html" class="read-more"> Read More → </a></article><article data-v-63de2f45="" class="blog-post"><div data-v-63de2f45="" class="post-meta"><span data-v-63de2f45="" class="post-category">networking</span><time data-v-63de2f45="" class="post-date">October 4, 2025</time></div><h3 data-v-63de2f45="" class="post-title"><a data-v-63de2f45="" href="blog/networking-fundamentals.html" class="post-link">Networking Fundamentals</a></h3><p data-v-63de2f45="" class="post-excerpt">Understanding computer networking basics and essential concepts for developers</p><div data-v-63de2f45="" class="post-tags"><span data-v-63de2f45="" class="tag">networking</span><span data-v-63de2f45="" class="tag">fundamentals</span><span data-v-63de2f45="" class="tag">tcp-ip</span><span data-v-63de2f45="" class="tag">protocols</span></div><a data-v-63de2f45="" href="blog/networking-fundamentals.html" class="read-more"> Read More → </a></article><article data-v-63de2f45="" class="blog-post"><div data-v-63de2f45="" class="post-meta"><span data-v-63de2f45="" class="post-category">cybersecurity</span><time data-v-63de2f45="" class="post-date">October 3, 2025</time></div><h3 data-v-63de2f45="" class="post-title"><a data-v-63de2f45="" href="blog/cloud-security-fundamentals.html" class="post-link">Cloud Security Fundamentals</a></h3><p data-v-63de2f45="" class="post-excerpt">Essential cloud security concepts and best practices for protecting cloud environments</p><div data-v-63de2f45="" class="post-tags"><span data-v-63de2f45="" class="tag">cloud-security</span><span data-v-63de2f45="" class="tag">aws</span><span data-v-63de2f45="" class="tag">azure</span><span data-v-63de2f45="" class="tag">gcp</span><span data-v-63de2f45="" class="tag">compliance</span></div><a data-v-63de2f45="" href="blog/cloud-security-fundamentals.html" class="read-more"> Read More → </a></article><article data-v-63de2f45="" class="blog-post"><div data-v-63de2f45="" class="post-meta"><span data-v-63de2f45="" class="post-category">cybersecurity</span><time data-v-63de2f45="" class="post-date">October 2, 2025</time></div><h3 data-v-63de2f45="" class="post-title"><a data-v-63de2f45="" href="blog/introduction-to-cybersecurity.html" class="post-link">Introduction to Cybersecurity</a></h3><p data-v-63de2f45="" class="post-excerpt">Learn the fundamentals of cybersecurity and why it matters in today's digital world</p><div data-v-63de2f45="" class="post-tags"><span data-v-63de2f45="" class="tag">cybersecurity</span><span data-v-63de2f45="" class="tag">basics</span><span data-v-63de2f45="" class="tag">security</span></div><a data-v-63de2f45="" href="blog/introduction-to-cybersecurity.html" class="read-more"> Read More → </a></article></div></div></div><footer data-v-06d049cd="" data-v-7dcba77a="" class="site-footer"><div data-v-06d049cd="" class="footer-content"><p data-v-06d049cd="">© 2025 cyber.netsecops.io. All rights reserved.</p><div data-v-06d049cd="" class="footer-links"><a data-v-06d049cd="" href="privacy">Privacy Policy</a><a data-v-06d049cd="" href="terms">Terms of Service</a><a data-v-06d049cd="" href="contact">Contact</a></div><div data-v-06d049cd="" class="social-links"><a data-v-06d049cd="" href="https://linkedin.com/company/cybernetsecops">LinkedIn</a><a data-v-06d049cd="" href="https://twitter.com/cybernetsecops">Twitter</a><a data-v-06d049cd="" href="https://github.com/cybernetsecops">GitHub</a></div></div></footer></div></div></div>
+    
   
 
 <p class="firebase-emulator-warning" style="position: fixed; width: 100%; background-color: rgb(255, 255, 255); border: 0.1em solid rgb(0, 0, 0); color: rgb(181, 0, 0); bottom: 0px; left: 0px; margin: 0px; z-index: 10000; text-align: center;">Running in emulator mode. Do not use with production credentials.</p></body></html>
