@@ -1,0 +1,1 @@
+import{f as t,c as s,J as o,o as a,I as r}from"#entry";const c={class:"min-h-screen bg-gray-950 text-gray-100"},n=t({__name:"cyber",setup(_){return(e,d)=>(a(),s("div",c,[o(e.$slots,"default",{},void 0,!0)]))}}),l=r(n,[["__scopeId","data-v-da2d5401"]]);export{l as default};
